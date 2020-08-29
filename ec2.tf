@@ -6,7 +6,7 @@ data "aws_ami" "ubuntu" {
     values = ["IaaSWeek-${var.hash_commit}"]
   }
 
-  owners = ["777015859311"] # My User
+  owners = ["178520105998"] # My User
 }
 
 resource "aws_instance" "web" {
@@ -17,5 +17,3 @@ resource "aws_instance" "web" {
     Name = var.app_name
   }
 }
-
-
